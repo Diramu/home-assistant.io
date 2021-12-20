@@ -139,7 +139,7 @@ service: select.select_option
 target:
   entity_id: select.wled_palette
 data:
-  option: "{{ state_attr('select.wled_palette', 'options') | random }}"
+  option: "{{ state_attr('select.wled_color_palette', 'options') | random }}"
 ```
 
 {% endraw %}
